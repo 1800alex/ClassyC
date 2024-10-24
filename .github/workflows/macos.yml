@@ -1,12 +1,14 @@
 on: [push, pull_request]
-name: Test
+name: macos tests
 jobs:
   build:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [macos-latest]
     steps:
       - uses: actions/checkout@v3
-      - run: sudo apt install -y build-essential
+      - uses: rlalik/setup-cpp-compiler@master
+        with:
+          compiler: gcc-10
       - run: cd tests && make

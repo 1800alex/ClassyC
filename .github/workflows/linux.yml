@@ -1,0 +1,12 @@
+on: [push, pull_request]
+name: linux tests
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v3
+      - run: sudo apt install -y build-essential
+      - run: cd tests && make
