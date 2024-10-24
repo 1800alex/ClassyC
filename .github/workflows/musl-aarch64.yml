@@ -14,5 +14,6 @@ jobs:
             build-base
       - name: Run tests
         run: |
+          uname -m
           cd tests && make
         shell: alpine.sh {0}
