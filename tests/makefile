@@ -1,6 +1,5 @@
 CC ?= gcc
-CLASSYC_DISABLE_ASYNC_METHODS ?= 0
-CFLAGS += -DCLASSYC_DISABLE_ASYNC_METHODS=$(CLASSYC_DISABLE_ASYNC_METHODS) -I../ -Iunity
+CFLAGS += -I../ -Iunity
 UNITY_SRC = unity.c
 SRC = ../ClassyC.h ./test_ClassyC_All.c
 
