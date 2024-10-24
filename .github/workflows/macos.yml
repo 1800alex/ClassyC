@@ -11,7 +11,12 @@ jobs:
       - uses: rlalik/setup-cpp-compiler@master
         with:
           compiler: gcc-12
-      - run: cd tests && make
+      - run: |
+          git clone https://github.com/tinycthread/tinycthread.git
+          cp tinycthread/source/tinycthread.c ./
+          cp tinycthread/source/tinycthread.h ./
+          cd tests
+          make
         env:
           CC: gcc-12
           CXX: g++-12
