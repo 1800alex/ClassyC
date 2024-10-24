@@ -9,7 +9,7 @@ test:
 
 format:
 	@clang-format -i ClassyC.h
-	@clang-format -i classyc_sample.h
+	@clang-format -i classyc_sample.c
 	@make --no-print-directory -C tests format
 
 clean:
