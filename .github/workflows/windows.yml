@@ -14,6 +14,3 @@ jobs:
       - run: |
           cd tests
           make
-        env:
-          CC: gcc-13
-          CXX: g++-13
