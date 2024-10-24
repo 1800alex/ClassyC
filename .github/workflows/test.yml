@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: sudo apt install -y build-essential
-      - run: cd test && make
+      - run: cd tests && make
