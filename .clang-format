@@ -22,8 +22,9 @@ AlwaysBreakTemplateDeclarations: No
 BinPackArguments: true
 BinPackParameters: true
 BraceWrapping:
+  AfterCaseLabel: false
   AfterClass: false
-  AfterControlStatement: Always
+  AfterControlStatement: Never
   AfterEnum: false
   AfterFunction: false
   AfterNamespace: false
@@ -33,16 +34,20 @@ BraceWrapping:
   BeforeCatch: false
   BeforeElse: false
   IndentBraces: false
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  BeforeWhile: false
+  BeforeLambdaBody: false
 BreakBeforeBinaryOperators: None
-BreakBeforeBraces: Custom
-BreakBeforeTernaryOperators: true
+BreakBeforeBraces: Linux
+BreakBeforeTernaryOperators: false
 BreakConstructorInitializersBeforeComma: false
 ColumnLimit: 0
 CommentPragmas: "^ IWYU pragma:"
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
 ConstructorInitializerIndentWidth: 4
 ContinuationIndentWidth: 4
-Cpp11BracedListStyle: true
+Cpp11BracedListStyle: false
 DerivePointerAlignment: false
 DisableFormat: false
 ExperimentalAutoDetectBinPacking: false
