@@ -8,5 +8,7 @@ jobs:
         os: [ubuntu-latest]
     steps:
       - uses: actions/checkout@v3
-      - run: sudo apt install -y build-essential
+      - uses: rlalik/setup-cpp-compiler@master
+        with:
+          compiler: gcc-latest
       - run: cd tests && make
