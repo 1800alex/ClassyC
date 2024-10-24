@@ -15,5 +15,10 @@ jobs:
       - name: Run tests
         run: |
           uname -m
-          cd tests && make
+          git clone https://github.com/tinycthread/tinycthread.git
+          cp tinycthread/source/tinycthread.c ./
+          cp tinycthread/source/tinycthread.h ./
+          cd tests
+          make
+
         shell: alpine.sh {0}
