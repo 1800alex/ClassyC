@@ -1,5 +1,5 @@
 on: [push, pull_request]
-name: musl aarch64 tests
+name: musl armv7 tests
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -8,7 +8,7 @@ jobs:
       - name: Setup latest Alpine Linux
         uses: jirutka/setup-alpine@v1
         with:
-          arch: aarch64
+          arch: armv7
           branch: v3.18
           packages: >
             build-base
