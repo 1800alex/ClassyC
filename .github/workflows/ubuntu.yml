@@ -1,5 +1,5 @@
 on: [push, pull_request]
-name: linux tests
+name: ubuntu tests
 jobs:
   build:
     runs-on: ${{ matrix.os }}
