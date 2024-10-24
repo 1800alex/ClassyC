@@ -11,6 +11,7 @@ jobs:
           branch: v3.18
           packages: >
             build-base
+            git
       - name: Run tests
         run: |
           uname -m
