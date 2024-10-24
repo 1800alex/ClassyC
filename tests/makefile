@@ -1,4 +1,4 @@
-CC = gcc
+CC ?= gcc
 CFLAGS = -I../ -Iunity
 UNITY_SRC = unity.c
 SRC = ../ClassyC.h ./test_ClassyC_All.c
