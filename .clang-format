@@ -24,14 +24,14 @@ BinPackParameters: true
 BraceWrapping:
   AfterClass: false
   AfterControlStatement: Always
-  AfterEnum: true
-  AfterFunction: true
+  AfterEnum: false
+  AfterFunction: false
   AfterNamespace: false
   AfterObjCDeclaration: false
-  AfterStruct: true
+  AfterStruct: false
   AfterUnion: false
   BeforeCatch: false
-  BeforeElse: true
+  BeforeElse: false
   IndentBraces: false
 BreakBeforeBinaryOperators: None
 BreakBeforeBraces: Custom
